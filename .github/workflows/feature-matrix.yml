@@ -26,7 +26,7 @@ jobs:
     name: Power set tests (shard ${{ matrix.partition }} of 4)
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         partition: [1, 2, 3, 4]
     steps:
